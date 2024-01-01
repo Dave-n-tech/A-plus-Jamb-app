@@ -1,0 +1,33 @@
+@import "./mixins.scss";
+
+.cta-btn{
+    @include button-style;
+}
+
+.app{
+    min-height: 100vh;
+    background-color: rgb(176, 86, 86);
+
+    .sections{
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        // scroll-snap-type: y mandatory;
+        // scroll-behavior: smooth;
+        // scrollbar-width: none;
+        // &::-webkit-scrollbar{
+        //     display: none;
+        // }
+
+        > *{
+            width: 100vw;
+            min-height: calc(100vh - 70px);
+            // scroll-snap-align: start;
+        }
+    }
+
+    // .Footer{
+    //     height: 70vh;
+    // }
+}

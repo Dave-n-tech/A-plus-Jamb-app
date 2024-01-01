@@ -1,0 +1,26 @@
+
+.testimonial-wrapper{
+    background-color: white;
+    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+    padding: 40px 0 10px;
+    text-align: center;
+
+    .user-Image{
+        width: 20px;
+        height: 20px;
+        border: 1px solid yellow;
+    }
+
+    .comment{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+}

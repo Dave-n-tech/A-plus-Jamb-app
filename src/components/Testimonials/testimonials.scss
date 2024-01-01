@@ -1,0 +1,29 @@
+@import "../../globals.scss";
+
+.Testimonials{
+    background-color: rgb(201, 214, 208);
+    text-align: center;
+
+    h1{
+        color: $mainColor;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 40px;
+    }
+
+    .card-container{
+        // border: 1px solid red;
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    button{
+        margin: 20px auto 10px;
+    }
+}
