@@ -3,8 +3,8 @@
 .Header{
     width: 100%;
     height: 70px;
-    background-color: $mainColor;
-    color: white;
+    background-color: white;
+    color: $mainColor;
     position: fixed;
     top: 0;
     z-index: 4;
@@ -39,7 +39,7 @@
             span{
                 width: 100%;
                 height: 3px;
-                background: white;
+                background: $mainColor;
                 transform-origin: left;
                 transition: all 1.5s ease;
             }
@@ -55,6 +55,7 @@
         }
 
         .hamburger{
+            
             span{
                 &:first-child{
                     background-color: $mainColor;
@@ -74,3 +75,14 @@
 
 
 
+@media only screen and (min-width: 768px) {
+    .Header{
+        .wrapper{
+            .right{
+                .hamburger{
+                    display: none;
+                }
+            }
+        }
+    }
+}

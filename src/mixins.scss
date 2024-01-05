@@ -2,8 +2,8 @@
 
 @mixin button-style {
     width: 200px;
-    height: 65px;
-    background-color: $mainColor;
+    height: 60px;
+    background-color: #073224;
     color: white;
     border-radius: 5px;
     border: none;
@@ -12,5 +12,6 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
+    cursor: pointer;
   }
   

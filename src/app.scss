@@ -2,6 +2,11 @@
 
 .cta-btn{
     @include button-style;
+
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .app{
@@ -13,21 +18,18 @@
         min-height: calc(100vh - 70px);
         position: relative;
         top: 70px;
-        // scroll-snap-type: y mandatory;
-        // scroll-behavior: smooth;
-        // scrollbar-width: none;
-        // &::-webkit-scrollbar{
-        //     display: none;
-        // }
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
 
         > *{
             width: 100vw;
             min-height: calc(100vh - 70px);
-            // scroll-snap-align: start;
+            scroll-snap-align: start;
         }
     }
 
-    // .Footer{
-    //     height: 70vh;
-    // }
 }

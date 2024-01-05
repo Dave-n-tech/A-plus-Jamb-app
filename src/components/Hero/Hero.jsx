@@ -1,4 +1,5 @@
 import "./hero.scss";
+import LoginButton from "../LoginButton/LoginButton";
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
           The ultimate app you need to prepare for UTME ecamination and score
           300 and above
         </p>
-        <button className="cta-btn">Get started</button>
+        <LoginButton/>
       </div>
 
       <div className="right">

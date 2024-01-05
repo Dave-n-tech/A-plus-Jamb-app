@@ -1,5 +1,6 @@
 import "./testimonials.scss";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
+import LoginButton from "../LoginButton/LoginButton";
 
 export default function Testimonials() {
   return (
@@ -10,7 +11,7 @@ export default function Testimonials() {
         <TestimonialCard />
         <TestimonialCard />
       </div>
-      <button className="cta-btn">Get started</button>
+      <LoginButton />
     </div>
   );
 }

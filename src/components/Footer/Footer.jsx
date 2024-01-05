@@ -9,7 +9,7 @@ export default function Footer({ setIsOpen }) {
   return (
     <div className="Footer" id="Footer">
       <p>
-        <a href="#">Contact us</a>
+        <a href="#Contact">Contact us</a>
       </p>
       <ul>
         <MenuList content="Home" href="#Hero" handleClick={handleClick} />
@@ -24,7 +24,7 @@ export default function Footer({ setIsOpen }) {
           handleClick={handleClick}
         />
         <li>
-          <a href="#">About us</a>
+          <a href="#About">About us</a>
         </li>
       </ul>
     </div>
