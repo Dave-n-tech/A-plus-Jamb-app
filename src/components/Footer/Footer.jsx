@@ -7,7 +7,7 @@ export default function Footer({ setIsOpen }) {
   };
 
   return (
-    <div className="Footer" id="Footer">
+    <footer className="Footer" id="Footer">
       <p>
         <a href="#Contact">Contact us</a>
       </p>
@@ -27,6 +27,6 @@ export default function Footer({ setIsOpen }) {
           <a href="#About">About us</a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }

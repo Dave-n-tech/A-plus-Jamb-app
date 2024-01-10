@@ -3,7 +3,7 @@ import "./formInput.scss";
 
 export default function FormInput(props) {
   const [focused, setFocused] = useState(false);
-  const { label, errorMessage, onChange, id, ...inputProps } = props;
+  const { label, errorMessage, onChange, id, required, ...inputProps } = props;
 
   const handleFocus = () => {
     setFocused(true);
@@ -11,15 +11,18 @@ export default function FormInput(props) {
 
   return (
     <div className="formInput">
-      <label> {label} </label>
-      <input
+      <label> {label} 
+      <input 
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
         onFocus={() => inputProps.name === "confirmPassword" && setFocused(true)}
         focused={focused.toString()}
+        autoComplete="off"
+        required= {required}
       />
       <span>{errorMessage}</span>
+      </label>
     </div>
   );
 }

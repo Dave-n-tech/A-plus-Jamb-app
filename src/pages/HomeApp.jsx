@@ -1,17 +1,17 @@
-import "../../app.scss";
+import "./homeApp.scss";
 import { useState } from "react";
-import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
-import Hero from "../Hero/Hero";
-import Features from "../Features/Features";
-import Testimonials from "../Testimonials/Testimonials";
-import Footer from "../Footer/Footer";
+import Header from "../components/Header/Header";
+import Menu from "../components/Menu/Menu";
+import Hero from "../components/Hero/Hero";
+import Features from "../components/Features/Features";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Footer from "../components/Footer/Footer";
 
 export default function HomeApp() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="app">
+    <main className="app">
       <Header isOpen={menuOpen} setIsOpen={setMenuOpen} />
       <Menu isOpen={menuOpen} setIsOpen={setMenuOpen} />
       <div className="sections">
@@ -20,6 +20,6 @@ export default function HomeApp() {
         <Testimonials />
       </div>
         <Footer setIsOpen={setMenuOpen}/>
-    </div>
+    </main>
   );
 }

@@ -1,5 +1,5 @@
 import MenuList from "../MenuList/MenuList";
-import LoginButton from "../LoginButton/LoginButton";
+import SignUpButton from "../SignUpButton/SignUpButton";
 import "./menu.scss";
 
 export default function Menu({ isOpen, setIsOpen }) {
@@ -14,7 +14,7 @@ export default function Menu({ isOpen, setIsOpen }) {
         <MenuList content="Testimonials" href="#Testimonials" handleClick={handleClick} />
         <MenuList content="Contact" href="#Footer" handleClick={handleClick} />
       </ul>
-      <LoginButton/>
+      <SignUpButton/>
     </div>
   );
 }

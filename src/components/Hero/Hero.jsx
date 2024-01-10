@@ -1,16 +1,16 @@
 import "./hero.scss";
-import LoginButton from "../LoginButton/LoginButton";
+import SignUpButton from "../SignUpButton/SignUpButton";
 
 export default function Hero() {
   return (
-    <div className="Hero" id="Hero">
+    <section className="Hero" id="Hero">
       <div className="left">
         <h1>The ultimate app to help you JAMB Jamb and score high in UTME</h1>
         <p>
           The ultimate app you need to prepare for UTME ecamination and score
           300 and above
         </p>
-        <LoginButton/>
+        <SignUpButton/>
       </div>
 
       <div className="right">
@@ -21,6 +21,6 @@ export default function Hero() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

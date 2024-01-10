@@ -1,4 +1,4 @@
-@import "../../globals.scss";
+@import "../globals.scss";
 
 .formContainer{
     display: flex;
@@ -12,9 +12,20 @@
         padding: 0px 50px;
         border-radius: 10px;
 
+        .error{
+            width: 90%;
+            height: 40px;
+            display: block;
+            color: rgb(123, 6, 6);
+            background-color: rgb(241, 178, 178);
+            text-align: center;
+        }
+
         h1{
+            margin-top: 5px;
             color: $mainColor;
             text-align: center;
+            font-weight: bold;
         }
         button{
             width: 100%;
@@ -26,7 +37,20 @@
             font-size: 18px;
             font-weight: bold;
             cursor: pointer;
-            margin: 15px 0px 30px;
+            margin: 15px 0px 15px;
+        }
+        p{
+            font-size: 14px;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .signin{
+            color: $mainColor;
+            cursor: pointer;
+
+            &:hover{
+                font-weight: 500;
+            }
         }
     }
 
