@@ -66,9 +66,13 @@ export default function LoginPage() {
       setInfo({
         email: "",
         password: ""
-      })
+      });
       
-      navigate("/dashboard")
+      if(accessToken){
+        navigate("/dashboard")
+      }else{
+        setErrMsg("Account doesn't exist, please create an account")
+      }
 
     } catch (err) {
       if (!err?.response) {
@@ -79,7 +83,6 @@ export default function LoginPage() {
         setErrMsg("Login Failed");
       }
       console.log(errMsg);
-      // alert(errMsg)
     }
     console.log(info)
   };
@@ -91,7 +94,8 @@ export default function LoginPage() {
   return (
     <>
         <section className="formContainer">
-          <form onClick={handleFormSubmit}>
+          <form onSubmit={handleFormSubmit}>
+            <p className={errMsg ? "error-msg" : "no-error"}>{errMsg}</p>
             <h1>Welcome Back</h1>
             {inputs.map((input) => (
               <FormInput
@@ -102,7 +106,7 @@ export default function LoginPage() {
               />
             ))}
             <button>login</button>
-            <p>
+            <p className="confirm">
               Forgot your password? <br />
               <span className="reset" onClick={goToResetPassword}>
                 Reset password

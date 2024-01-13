@@ -1,9 +1,24 @@
 @import "./signupPage.scss";
 
+
+.error-msg{
+    display: block;
+    color: rgb(123, 6, 6);
+    background-color: rgb(241, 178, 178);
+    margin: 5px auto 0px;
+    padding: 5px;
+    font-size: 12px;
+    height: 20px;
+    text-align: center;
+}
+.no-error{
+    display: none;
+}
 .reset {
     width: 100%;
     color: $mainColor;
     cursor: pointer;
     font-size: 14px;
+    margin: 0 auto 10px;
     // border: 1px solid red;
 }

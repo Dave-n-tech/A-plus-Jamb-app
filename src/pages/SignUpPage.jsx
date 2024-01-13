@@ -80,8 +80,6 @@ export default function SignUpPage() {
         }
       );
       console.log(JSON.stringify(response));
-      // const accessToken = response?.data?.accessToken;
-      // const role = response?.data?.role;
 
       alert("Account created successfully");
       setValues({
@@ -135,8 +133,8 @@ export default function SignUpPage() {
               />
             ))}
             <button className="loginbtn">signup</button>
-            <p>
-              Already have an account?{" "}
+            <p className="confirm">
+              Already have an account?
               <span className="signin" onClick={goToLogin}>
                 Sign in
               </span>
